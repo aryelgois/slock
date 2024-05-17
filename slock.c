@@ -168,7 +168,7 @@ readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,
 					ksym = XK_Return;
 					break;
 				case XK_h:
-                                       ksym = XK_BackSpace;
+					ksym = XK_BackSpace;
 					break;
 				}
 			}
