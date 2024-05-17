@@ -15,6 +15,17 @@ If provided,
 .Ar cmd
 is executed after the screen has been locked.
 .Pp
+Cancel
+.Nm
+by moving the mouse within a certain time-period after
+.Nm
+started. The time-period can be defined in seconds with the setting
+.Sy timetocancel
+in the config.h. This is useful if you forgot to disable
+.Xr xautolock 1
+during an activity that requires no input
+(e.g. reading text, watching video).
+.Pp
 The options are as follows:
 .Bl -tag -width Ds
 .It Fl v
