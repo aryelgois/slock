@@ -12,6 +12,10 @@
 is a simple X screen locker. If provided,
 .Ar cmd Op Ar arg ...
 is executed after the screen has been locked.
+.Pp
+Alternative command(s) can be executed after the user enters
+in a "secret" password, as specified in config.h. Note that
+the executed command is blocking.
 .Sh OPTIONS
 .Bl -tag -width Ds
 .It Fl v
