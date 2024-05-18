@@ -11,9 +11,11 @@ static const char *colorname[NUMCOLS] = {
 /* treat a cleared input like a wrong password (color) */
 static const int failonclear = 1;
 
-/* length of entires in scom  */s
-static const int entrylen = 1;
+/* length of entires in scom */
+#define SCOMLEN 1
 
-static const secretpass scom[entrylen] = {
-/*	 Password				command */
-	{ "shutdown",           "doas poweroff" },};
+/* "secret" comands */
+static const struct secretcommand scom[SCOMLEN] = {
+	/* Password     command */
+	{ "shutdown",   "doas poweroff" },
+};
