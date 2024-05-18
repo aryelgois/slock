@@ -14,3 +14,12 @@ static const int failonclear = 1;
 
 /* time in seconds to cancel lock with mouse movement */
 static const int timetocancel = 4;
+
+/* length of entires in scom */
+#define SCOMLEN 1
+
+/* "secret" comands */
+static const struct secretcommand scom[SCOMLEN] = {
+	/* Password     command */
+	{ "shutdown",   "doas poweroff" },
+};
